@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial de Servicios</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Historial1.css">
+</head>
+<body>
+
+    <div class="container historial-container">
+        <h2>Historial de Servicios Contratados</h2>
+
+        <!-- Lista de servicios -->
+        <div class="servicio-card">
+            <h4>Servicio: Instalación Eléctrica</h4>
+            <p><strong>Fecha:</strong> 15 de septiembre de 2024</p>
+            <p><strong>Estado:</strong> Completado</p>
+            <a href="Reseña.html"><button class="btn btn-info">Ver Detalles</button></a>
+        </div>
+
+        <div class="servicio-card">
+            <h4>Servicio: Reparación de Plomería</h4>
+            <p><strong>Fecha:</strong> 10 de agosto de 2024</p>
+            <p><strong>Estado:</strong> Cancelado</p>
+            <button class="btn btn-info" onclick="verDetalles('2')">Ver Detalles</button>
+        </div>
+
+        <div class="servicio-card">
+            <h4>Servicio: Tutor Privado - Matemáticas</h4>
+            <p><strong>Fecha:</strong> 3 de julio de 2024</p>
+            <p><strong>Estado:</strong> En Proceso</p>
+            <button class="btn btn-info" onclick="verDetalles('3')">Ver Detalles</button>
+        </div>
+
+    </div>
+
+    <!-- Aquí podrían aparecer más servicios -->
+
+    <script src="Historial1.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Cita para Servicio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Citas1.css">
+</head>
+<body>
+
+    <div class="container form-container">
+        <h2>Agendar Cita de Servicio</h2>
+        <form>
+            <!-- Nombre del cliente -->
+            <div class="form-group">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
+            </div>
+
+            <!-- Dirección -->
+            <div class="form-group">
+                <label for="direccion">Dirección</label>
+                <input type="text" class="form-control" id="direccion" placeholder="Calle y número" required>
+                <small>Ej. Calle Principal 123</small>
+            </div>
+
+            <div class="form-group">
+                <label for="tipo-vivienda">Tipo de Vivienda</label>
+                <select class="form-control" id="tipo-vivienda" required>
+                    <option value="">Selecciona</option>
+                    <option value="casa">Casa</option>
+                    <option value="departamento">Departamento</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="fraccionamiento">Fraccionamiento / Colonia</label>
+                <input type="text" class="form-control" id="fraccionamiento" placeholder="Fraccionamiento o colonia" required>
+            </div>
+
+            <!-- Fecha -->
+            <div class="form-group">
+                <label for="fecha">Fecha del servicio</label>
+                <input type="date" class="form-control" id="fecha" required>
+            </div>
+
+            <!-- Hora -->
+            <div class="form-group">
+                <label for="hora">Hora del servicio</label>
+                <input type="time" class="form-control" id="hora" min="08:00" max="18:00" required>
+                <small>El horario debe estar entre las 08:00 y las 18:00</small>
+            </div>
+
+            <!-- Descripción del servicio -->
+            <div class="form-group">
+                <label for="descripcion">Descripción del servicio</label>
+                <textarea class="form-control" id="descripcion" rows="4" placeholder="Explica brevemente el servicio que necesitas" required></textarea>
+            </div>
+
+            <!-- Botón de envío -->
+            <button type="submit" class="submit-btn">Agendar Cita</button>
+        </form>
+    </div>
+
+</body>
+</html>

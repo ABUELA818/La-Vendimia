@@ -1,0 +1,155 @@
+.categorias {
+    width: 180px;
+    height: auto;
+    transition: 0.5s;
+}
+
+.categorias1 {
+    width: 180px;
+    height: auto;
+    transition: 0.5s;
+}
+
+#salto {
+    margin-top: 100px;
+    margin-left: 20px;
+}
+
+.cuadro1 {
+    margin-top: -20px;
+    background-color: #c9897f;
+    height: 180px;
+    width: 190px;
+    position: relative;
+    transition: 0.5s;
+    padding: 5px;
+    border-radius: 10%;
+}
+
+.cuadro2 {
+    background-color: #c9897f;
+    height: 240px;
+    width: 180px;
+    position: relative;
+    transition: 0.5s;
+    margin-top: 50px;
+    padding: 5px;
+    border-radius: 10%;
+}
+
+.cuadro3 {
+    background-color: #c9897f;
+    height: 190px;
+    width: 195px;
+    position: relative;
+    transition: 0.5s;
+    margin-top: 50px;
+    padding: 5px;
+    border-radius: 10%;
+}
+
+.boton1, .boton2 {
+    margin-top: 60px;
+    margin-left: 45px;
+    padding: 10px 15px; 
+    width: 100px;
+    height: 50px;
+    background-color: #c9897f;
+    border-radius: 5px;
+    border: none;
+    color: white; 
+    cursor: pointer;
+}
+
+.boton2 {
+    margin-top: -50px;
+}
+
+.col-md-3:hover .boton1,
+.col-md-3:hover .boton2 {
+    background-color: #d24858; 
+}
+
+.col-md-3:hover .categorias,
+.col-md-3:hover .categorias1,
+.col-md-3:hover .cuadro1,
+.col-md-3:hover .cuadro2,
+.col-md-3:hover .cuadro3 {
+    transform: rotate(5deg);
+    border-radius: 50%; 
+    background-color: #d24858;
+}
+
+
+.cuadrito {
+    width: 400px; 
+    height: 470px;
+    background-color: #fdeecd; 
+    border: 6px solid #000; 
+    margin: 20px;
+    margin-bottom: 30px;
+    padding: 15px; 
+    box-sizing: border-box; 
+    text-align: center; 
+    border-radius: 50px;
+    border-color: #d76864;
+    animation: 2s;
+    transition: transform 0.2s ease-in-out; /* Transición al hacer hover */
+}
+
+.cuadrito img {
+    width: 80%;
+    height: 40%; 
+    margin: 5px 0; 
+    border-radius: 20px;
+}
+
+.cuadrito h1{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #aed6c9;
+    border-radius: 10px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.cuadrito h2{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #72ce92;
+    width: 80%;
+    margin-left:10%;
+}
+
+.cuadrito:hover{
+    cursor: pointer;
+    border-color: rgb(182, 46, 9);
+    transform: scale(1.05); /* Agrega un efecto de escala en hover */ 
+}
+
+
+.separator {
+    height: 2px; /* Ajusta la altura según sea necesario */
+    background-color: #ffffff; /* Color de la línea */
+    margin: 20px 20px; /* Espacio arriba y abajo de la línea */
+    width: 90%; /* Ocupa el ancho completo del cuadro */
+    margin-left: 5%;
+}
+
+#cuadross{
+    margin-top: 50px;
+}
+
+.catego{
+    margin-left: 50px;
+}
+
+.rayita{
+    width: 100%;
+    height: 20px;
+    background-color: #493831;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+

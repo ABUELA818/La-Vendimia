@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdeecd;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background-color: #eab05e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(73, 56, 49, 0.1);
+}
+
+h2, h3 {
+    color: #493831;
+}
+
+.summary {
+    margin-bottom: 20px;
+}
+
+.summary p {
+    margin: 10px 0;
+    color: #493831;
+}
+
+.stars {
+    margin: 10px 0;
+}
+
+.stars i {
+    font-size: 24px;
+    color: #493831;
+    cursor: pointer;
+}
+
+.stars i.selected {
+    color: #ea8676;
+}
+
+textarea {
+    width: 90%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #493831;
+    margin-top: 10px;
+    background-color: #fdeecd;
+    color: #493831;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ea8676;
+    color: #fdeecd;
+}
+
+.btn:hover {
+    background-color: #d24858;
+}
+
+.btn.danger {
+    background-color: #d24858;
+    color: #fdeecd;
+}
+
+.btn.danger:hover {
+    background-color: #ea8676;
+}
+
+.btn.primary {
+    background-color: #ea8676;
+    color: #fdeecd;
+}
+
+.hidden {
+    display: none;
+}
+
+#tipAmount {
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #493831;
+    width: 100px;
+    background-color: #fdeecd;
+    color: #493831;
+}

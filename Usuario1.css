@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #fdeecd;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(73, 56, 49, 0.2);
+}
+
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.image-section {
+    flex: 1;
+    min-width: 300px;
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 2px solid #493831;
+}
+
+.image-gallery {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.gallery-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #493831;
+}
+
+.info-section {
+    flex: 2;
+    min-width: 300px;
+    background-color: #eab05e;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+h1, h2 {
+    margin-top: 0;
+    color: #493831;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+    background-color: #fdeecd;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    color: #493831;
+}
+
+.rates {
+    margin-bottom: 20px;
+    background-color: #fdeecd;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.rates ul {
+    list-style-type: none;
+    padding: 0;
+    color: #493831;
+}
+
+.description {
+    margin-top: 20px;
+    background-color: #fdeecd;
+    padding: 15px;
+    border-radius: 5px;
+    color: #493831;
+}
+
+/* Estilos adicionales para mejorar la apariencia */
+h3 {
+    color: #493831;
+    border-bottom: 2px solid #493831;
+    padding-bottom: 5px;
+}
+
+/* Estilo para botones (si los agregas en el futuro) */
+.button {
+    background-color: #ea8676;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #d24858;
+}
+
+/* Ajuste de contraste para mejor legibilidad */
+.info-section p, .info-section li {
+    color: #493831;
+}
+
+.schedule-btn {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    margin: 20px 0;
+    background-color: #ea8676;
+    color: #fdeecd;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.schedule-btn:hover {
+    background-color: #d24858;
+}

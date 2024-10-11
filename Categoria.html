@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELECCIÓN DE ELECTRICISTAS</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Categoria1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body id="fonfo">
+    <!-- Botón de menú para el filtro -->
+    <button id="toggleButton" class="fas fa-chevron-right"></button>
+
+    <!-- Contenedor de los filtros -->
+    <div id="filterContainer" class="filter-slide">
+        <button id="closeButton" class="fas fa-times"></button>
+        <h3>Filtros</h3>
+        <div class="filtros-content">
+            <!-- Filtros de especialidad -->
+            <h4>Especialidad</h4>
+            <label><input type="checkbox"> Residencial</label>
+            <label><input type="checkbox"> Comercial</label>
+            <label><input type="checkbox"> Industrial</label>
+            
+            <!-- Filtros de experiencia -->
+            <h4>Experiencia</h4>
+            <label><input type="checkbox"> 0-5 años</label>
+            <label><input type="checkbox"> 5-10 años</label>
+            <label><input type="checkbox"> 10+ años</label>
+
+            <!-- Filtros de certificaciones -->
+            <h4>Certificaciones</h4>
+            <label><input type="checkbox"> Licencia estatal</label>
+            <label><input type="checkbox"> Certificación en energía renovable</label>
+
+            <!-- Rango de precio por hora -->
+            <h4>Rango de precio por hora</h4>
+            <input type="text" placeholder="$ Min">
+            <input type="text" placeholder="$ Max">
+        </div>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <input type="text" class="search-bar" placeholder="Buscar electricista...">
+                <button class="search-button">Buscar</button>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="cuadro">
+        <div class="row">
+            <div class="col-md-4">
+                <button class="cate">Electricistas</button>
+            </div>
+        </div>
+        <div class="row"> 
+            <a href="Usuario.html"><div class="col-md-4"> 
+                <div class="cuadrito" id="cuadrito">
+                <h1>Juan Perez</h1>
+                <h2>Especialista en instalaciones residenciales</h2>
+                <img src="Imagenes/img1.jpg" alt="Electricista">
+                <div class="separator"></div>
+                    <p class="desc">
+                      Soy un electricista certificado con más de 10 años de experiencia en instalaciones y 
+                      reparaciones eléctricas residenciales. Me especializo en soluciones de ahorro energético 
+                      y actualización de sistemas eléctricos antiguos. Garantizo un trabajo seguro y de calidad.
+                    </p>
+                </div>
+            </div></a>
+            <div class="col-md-4"> 
+                <div class="cuadrito" id="cuadrito">
+                    <h1>Ana Martínez</h1>
+                    <h2>Experta en sistemas de energía renovable</h2>
+                    <img src="Imagenes/img2.jpg" alt="Electricista">
+                    <div class="separator"></div>
+                    <p>Especializada en instalación y mantenimiento de paneles solares y sistemas eólicos domésticos.</p> 
+                </div>
+            </div>
+            <div class="col-md-4"> 
+                <div class="cuadrito" id="cuadrito">
+                    <h1>Miguel Sánchez</h1>
+                    <h2>Electricista industrial</h2>
+                    <img src="Imagenes/img3.jpg" alt="Electricista">
+                    <div class="separator"></div>
+                    <p>Amplia experiencia en instalaciones eléctricas de alta tensión y automatización industrial.</p> 
+                </div>
+            </div>
+        </div>
+        <div class="row"> 
+          <div class="col-md-4"> 
+              <div class="cuadrito" id="cuadrito">
+                  <h1>Laura Gómez</h1>
+                  <h2>Especialista en domótica</h2>
+                  <img src="Imagenes/img1.jpg" alt="Electricista">
+                  <div class="separator"></div>
+                  <p>Experta en instalación de sistemas de hogar inteligente y automatización residencial.</p> 
+              </div>
+          </div>
+          <div class="col-md-4"> 
+              <div class="cuadrito" id="cuadrito">
+                  <h1>Roberto Fernández</h1>
+                  <h2>Electricista de mantenimiento</h2>
+                  <img src="Imagenes/img2.jpg" alt="Electricista">
+                  <div class="separator"></div>
+                  <p>Especializado en mantenimiento preventivo y correctivo de sistemas eléctricos comerciales.</p> 
+              </div>
+          </div>
+          <div class="col-md-4"> 
+              <div class="cuadrito" id="cuadrito">
+                  <h1>Elena Torres</h1>
+                  <h2>Técnica en iluminación</h2>
+                  <img src="Imagenes/img3.jpg" alt="Electricista">
+                  <div class="separator"></div>
+                  <p>Experta en diseño e instalación de sistemas de iluminación eficientes para hogares y negocios.</p> 
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="Categorias1.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+.carousel-container {
+    text-align: left;
+    background-color: #eab05e;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 97vw;
+    margin-left: 20px;
+}
+
+.texto{
+    margin-left: 25px;
+    color: #493831;
+}
+
+.carousel {
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+    padding: 10px 0;
+    border-radius: 20px;
+}
+
+.carousel-track {
+    display: flex;
+    width: 1000px;
+    animation: scroll 35s linear infinite;
+}
+
+.boton {
+    width: 250px;
+    margin: 15px;
+    padding: 10px;
+    background-color: #ea8676;
+    border-radius: 50px;
+    border-color: #d24858;
+    color: white;
+}
+
+.boton:hover{
+    background-color: #d24858;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(150%);
+    }
+    100% {
+        transform: translateX(-200%);
+    }
+}

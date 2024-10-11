@@ -1,0 +1,536 @@
+.cloud {
+    position: absolute;
+    width: 250px;
+    height: auto;
+}
+
+#nube1 { top: 50px; animation: moverNube1 70s linear infinite; }
+#nube2 { top: 240px; animation: moverNube2 80s linear infinite; }
+#nube3 { top: 500px; animation: moverNube3 90s linear infinite; }
+#nube4 { top: 600px; animation: moverNube4 100s linear infinite; }
+#nube5 { top: 150px; animation: moverNube5 85s linear infinite; } /* New cloud */
+#nube6 { top: 350px; animation: moverNube6 95s linear infinite; } /* New cloud */
+
+/* Cloud animations */
+@keyframes moverNube1 {
+    0% { transform: translateX(-300px); }
+    100% { transform: translateX(100vw); }
+}
+
+@keyframes moverNube2 {
+    0% { transform: translateX(-1200px); }
+    100% { transform: translateX(100vw); }
+}
+
+@keyframes moverNube3 {
+    0% { transform: translateX(-500px); }
+    100% { transform: translateX(100vw); }
+}
+
+@keyframes moverNube4 {
+    0% { transform: translateX(-2000px); }
+    100% { transform: translateX(100vw); }
+}
+
+@keyframes moverNube5 {
+    0% { transform: translateX(-800px); }
+    100% { transform: translateX(100vw); }
+}
+
+@keyframes moverNube6 {
+    0% { transform: translateX(-1500px); }
+    100% { transform: translateX(100vw); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .cloud { width: 150px; }
+}
+
+@media (max-width: 480px) {
+    .cloud { width: 100px; }
+}
+
+#inicio{
+    height: 100vh;
+}
+
+#colorpagina {
+    background-color: #fdeecd;
+}
+
+#contenedor {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 130px;
+}
+
+#Lavendimia1, #Lavendimia2, #Lavendimia3{
+    margin-top: 150px;
+    height: 200px;  
+    width: 100px;
+    transition: 0.2s;
+}
+
+#Lavendimia4 {
+    margin-top: 150px;
+    height: 200px;
+    width: 50px; 
+    transition: 0.2s;
+}
+
+#Lavendimia1:hover,
+#Lavendimia2:hover,
+#Lavendimia3:hover,
+#Lavendimia4:hover {
+    margin-top: 0px;
+}
+
+
+.dv1 {
+    margin-left: 70px;
+}
+
+.dv2 {
+    margin-left: 10px;
+}
+
+#Colabo{
+    position: absolute;
+    margin-left: 350px;
+    margin-top: -190px;
+    width: 500px;
+    height: auto;
+}
+
+#Pin{
+    position: absolute;
+    margin-left: 470px;
+    margin-top: 500px;
+    width: 250px;
+    height: auto;
+}
+
+#Bill{
+    position: absolute;
+    margin-left: 0px;
+    margin-top: -140px;
+    width: 150px;
+    height: auto;
+}
+
+
+@media (min-width: 0px) and (max-width: 240px) {
+    #Lavendimia1, #Lavendimia2, #Lavendimia3{
+        height: 30px;
+        width: 12px;
+    }
+
+    #Lavendimia4{
+        width: 8px;
+        height: 30px;
+    }
+
+    #nube1, #nube2, #nube3, #nube4 {
+        width: 70px;
+    }
+
+    .dv1 {
+        margin-left: 15px;
+    }
+
+    .dv2{
+        margin-left:4px;
+    }
+
+    #Pin{
+        margin-left: 65px;
+        margin-top: 240px;
+        width: 60px;
+    }
+
+    #Bill{
+        position: absolute;
+        margin-left: 0px;
+        margin-top: -20px;
+        width: 0px;
+    }
+}
+
+@media (min-width: 240px) and (max-width: 303px) {
+    #Lavendimia1, #Lavendimia2, #Lavendimia3{
+        height: 40px;
+        width: 15px;
+    }
+
+    #Lavendimia4{
+        width: 9px;
+        height: 40px;
+    }
+
+    #nube1, #nube2 {
+        width: 70px;
+    }
+
+    .dv1 {
+        margin-left: 20px;
+    }
+
+    .dv2{
+        margin-left:4px;
+    }
+
+    #Pin{
+        margin-left: 80px;
+        margin-top: 270px;
+        width: 80px;
+    }
+
+    #Colabo{
+        margin-left: 15px;
+        margin-top: -0px;
+        width: 200px;
+    }
+
+    #Bill{
+        position: absolute;
+        margin-left: 0px;
+        margin-top: -20px;
+        width: 0px;
+    }
+}
+
+@media (min-width: 303px) and (max-width: 395px) {
+    #Lavendimia1, #Lavendimia2, #Lavendimia3{
+        height: 50px;
+        width: 20px;
+    }
+
+    #Lavendimia4{
+        width: 11px;
+        height: 50px;
+    }
+
+    #nube1, #nube2, #nube3, #nube4{
+        width: 90px;
+    }
+
+    .dv1 {
+        margin-left: 25px;
+    }
+
+    .dv2{
+        margin-left:5px;
+    }
+    #Pin{
+        margin-left: 100px;
+        margin-top: 300px;
+        width: 100px;
+    }
+
+    #Colabo{
+        margin-left: 60px;
+        margin-top: -0px;
+        width: 200px;
+    }
+
+    #Bill{
+        position: absolute;
+        margin-left: 0px;
+        margin-top: -20px;
+        width: 0px;
+    }
+}
+
+@media (min-width: 395px) and (max-width: 490px) {
+    #Lavendimia1, #Lavendimia2, #Lavendimia3{
+        height: 60px;
+        width: 25px;
+    }
+
+    #Lavendimia4{
+        width: 11px;
+        height: 60px;
+    }
+
+    #nube1, #nube2, #nube3, #nube4 {
+        width: 110px;
+    }
+
+    .dv1 {
+        margin-left: 30px;
+    }
+
+    #Pin{
+        margin-left: 140px;
+        margin-top: 320px;
+        width: 110px;
+    }
+
+    #Colabo{
+        margin-left: 120px;
+        margin-top: -10px;
+        width: 200px;
+    }
+
+    #Bill{
+        position: absolute;
+        margin-left: 0px;
+        margin-top: -20px;
+        width: 0px;
+    }
+}
+
+@media (min-width: 490px) and (max-width: 640px) {
+    #Lavendimia1, #Lavendimia2, #Lavendimia3{
+        height: 70px;
+        width: 35px;
+    }
+
+    #Lavendimia4{
+        width: 12px;
+        height: 70px;
+    }
+
+    #nube1, #nube2, #nube3, #nube4 {
+        width: 130px;
+    }
+
+    .dv1 {
+        margin-left: 35px;
+    }
+
+    #Pin{
+        margin-left: 180px;
+        margin-top: 330px;
+        width: 120px;
+    }
+
+    #Pin{
+        margin-left: 230px;
+        margin-top: 340px;
+        width: 130px;
+    }
+
+    #Colabo{
+        margin-left: 150px;
+        margin-top: -40px;
+        width: 200px;
+    }
+
+    #Bill{
+        position: absolute;
+        margin-left: 0px;
+        margin-top: -20px;
+        width: 0px;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 720px) {
+    #Lavendimia1, #Lavendimia2, #Lavendimia3{
+        height: 80px;
+        width: 45px;
+    }
+
+    #Lavendimia4{
+        width: 15px;
+        height: 80px;
+    }
+
+    #nube1, #nube2 , #nube3, #nube4{
+        width: 150px;
+    }
+
+    .dv1 {
+        margin-left: 40px;
+    }
+
+    #Pin{
+        margin-left: 230px;
+        margin-top: 340px;
+        width: 130px;
+    }
+
+    #Colabo{
+        margin-left: 180px;
+        margin-top: -60px;
+        width: 250px;
+    }
+
+    #Bill{
+        position: absolute;
+        margin-left: 0px;
+        margin-top: -20px;
+        width: 150px;
+    }
+}
+
+@media (min-width: 720px) and (max-width: 820px) {
+    #Lavendimia1, #Lavendimia2, #Lavendimia3{
+        height: 90px;
+        width: 55px;
+    }
+
+    #Lavendimia4{
+        width: 15px;
+        height: 90px;
+    }
+
+    #nube1, #nube2, #nube3, #nube4 {
+        width: 180px;
+    }
+    .dv1 {
+        margin-left: 45px;
+    }
+
+    #Pin{
+        margin-left: 270px;
+        margin-top: 370px;
+        width: 150px;
+    }
+
+    #Colabo{
+        margin-left: 210px;
+        margin-top: -90px;
+        width: 300px;
+    }
+
+    #Bill{
+        position: absolute;
+        margin-left: 0px;
+        margin-top: -20px;
+        width: 150px;
+    }
+}
+
+@media (min-width: 820px) and (max-width: 920px) {
+    #Lavendimia1, #Lavendimia2, #Lavendimia3{
+        height: 100px;
+        width: 65px;
+    }
+
+    #Lavendimia4{
+        width: 25px;
+        height: 100px;
+    }
+
+    #nube1, #nube2, #nube3, #nube4 {
+        width: 200px;
+    }
+
+    .dv1 {
+        margin-left: 50px;
+    }
+
+    #Pin{
+        margin-left: 330px;
+        margin-top: 370px;
+        width: 170px;
+    }
+
+    #Colabo{
+        margin-left: 230px;
+        margin-top: -100px;
+        width: 350px;
+    }
+
+    #Bill{
+        position: absolute;
+        margin-left: 0px;
+        margin-top: -30px;
+        width: 150px;
+    }
+}
+
+@media (min-width: 920px) and (max-width: 1120px) {
+    #Lavendimia1, #Lavendimia2, #Lavendimia3{
+        height: 110px;
+        width: 75px;
+    }
+
+    #Lavendimia4{
+        width: 35px;
+        height: 110px;
+    }
+
+    #nube1, #nube2, #nube3, #nube4 {
+        width: 250px;
+    }
+
+    .dv1 {
+        margin-left: 60px;
+    }
+
+    #Pin{
+        margin-left: 380px;
+        margin-top: 390px;
+        width: 180px;
+    }
+
+    #Colabo{
+        margin-left: 270px;
+        margin-top: -120px;
+        width: 400px;
+    }
+
+    #Bill{
+        position: absolute;
+        margin-left: 0px;
+        margin-top: -40px;
+        width: 150px;
+    }
+    
+}
+
+@media (min-width: 1020px) and (max-width: 1150px) {
+    #Lavendimia1, #Lavendimia2, #Lavendimia3{
+        height: 120px;
+        width: 85px;
+    }
+
+    #Lavendimia4{
+        width: 45px;
+        height: 120px;
+    }
+
+    #nube1, #nube2, #nube3, #nube4 {
+        width: 250px;
+    }
+
+    #Pin{
+        margin-left: 430px;
+        margin-top: 420px;
+        width: 200px;
+    }
+
+    #Colabo{
+        margin-left: 320px;
+        margin-top: -150px;
+        width: 430px;
+    }
+
+    #Bill{
+        position: absolute;
+        margin-left: 0px;
+        margin-top: -60px;
+        width: 150px;
+    }
+
+}
+
+@media (min-width: 1150px) {
+    #Lavendimia1, #Lavendimia2, #Lavendimia3{
+        height: 200px;
+        width: 100px;
+    }
+
+    #Lavendimia4{
+        width: 50;
+    }
+
+    #nube1, #nube2, #nube3, #nube4 {
+        width: 250px;
+    }
+}
+

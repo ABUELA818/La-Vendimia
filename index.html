@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>La Vendimia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="carrusel.css">
+    <link rel="stylesheet" href="barra.css">
+    <link rel="stylesheet" href="Styles2.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+    
+<body id="colorpagina">
+    <div class="container-fluid" >
+        <div class="row" id="inicio">
+            <div class="col-md-12" id="contenedor">
+                <div class="dv1"><img src="Imagenes/L.png" alt="" id="Lavendimia1"></div>
+                <div class="dv2"><img src="Imagenes/A.png" alt="" id="Lavendimia2"></div>
+                <div class="dv1"><img src="Imagenes/V.png" alt="" id="Lavendimia3"></div>
+                <div class="dv2"><img src="Imagenes/E.png" alt="" id="Lavendimia2"></div>
+                <div class="dv2"><img src="Imagenes/N.png" alt="" id="Lavendimia2"></div>
+                <div class="dv2"><img src="Imagenes/D.png" alt="" id="Lavendimia2"></div>
+                <div class="dv2"><img src="Imagenes/I.png" alt="" id="Lavendimia4"></div>
+                <div class="dv2"><img src="Imagenes/M.png" alt="" id="Lavendimia2"></div>
+                <div class="dv2"><img src="Imagenes/I.png" alt="" id="Lavendimia4"></div>
+                <div class="dv2"><img src="Imagenes/A.png" alt="" id="Lavendimia2"></div>
+                <img src="Imagenes/pingui.png" alt="" id="Pin">
+                <img src="Imagenes/Billete.png" alt="" id="Bill">
+                        
+                <img src="Imagenes/Nube.png" alt="" id="nube1" class="cloud">
+                <img src="Imagenes/Nube.png" alt="" id="nube2" class="cloud">
+                <img src="Imagenes/Nube.png" alt="" id="nube3" class="cloud">
+                <img src="Imagenes/Nube.png" alt="" id="nube4" class="cloud">
+                <img src="Imagenes/Nube.png" alt="" id="nube5" class="cloud">
+                <img src="Imagenes/Nube.png" alt="" id="nube6" class="cloud">
+    
+            </div>
+        </div>
+    </div>
+
+    <div id="barra-busqueda" class="hidden">
+        <input type="text" placeholder="Buscar..." class="barra">
+        <button class="barraboton">Buscar</button>
+        <div class="profile-button">
+            <button id="perfilBtn">Perfil</button>
+            <div id="perfilPopup" class="perfil-popup hidden">
+                <ul>
+                    <li><a href="logIn.html">Perfil</a></li>
+                    <li><a href="#" id="notificacionesBtn">Notificaciones</a></li>
+                    <li><a href="Historial.html">Historial</a></li>
+                    <li><a href="#">Ajustes</a></li>
+                    <li><a href="#">Cerrar sesión</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- New Notifications Pop-up -->
+    <div id="notificacionesPopup" class="notificaciones-popup hidden">
+        <h3>Notificaciones</h3>
+        <div class="notificacion aceptada">
+            <img src="path_to_buyer_image.jpg" alt="Comprador" class="notificacion-imagen">
+            <div class="notificacion-contenido">
+                <p><strong>Juan Pérez</strong> ha aceptado tu solicitud de cita</p>
+                <div class="notificacion-opciones">
+                    <button class="opcion-btn">Recomendaciones similares</button>
+                    <button class="opcion-btn">Eliminar</button>
+                    <button class="opcion-btn">Ver detalles</button>
+                </div>
+            </div>
+        </div>
+        <div class="notificacion rechazada">
+            <img src="path_to_buyer_image.jpg" alt="Comprador" class="notificacion-imagen">
+            <div class="notificacion-contenido">
+                <p><strong>María García</strong> ha rechazado tu solicitud de cita</p>
+                <div class="notificacion-opciones">
+                    <button class="opcion-btn">Recomendaciones similares</button>
+                    <button class="opcion-btn">Eliminar</button>
+                    <button class="opcion-btn">Ver detalles</button>
+                </div>
+            </div>
+        </div>
+        <div class="notificacion proveedor">
+            <img src="path_to_provider_image.jpg" alt="Proveedor" class="notificacion-imagen">
+            <div class="notificacion-contenido">
+                <p><strong>Carlos Rodríguez</strong> ha solicitado una cita</p>
+                <div class="notificacion-opciones">
+                    <button class="opcion-btn aceptar">Aceptar</button>
+                    <button class="opcion-btn rechazar">Rechazar</button>
+                    <button class="opcion-btn">Ver detalles</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="rayita"></div>
+
+        <div class="carousel-container">
+            <h2 class="texto">PERSONAS DESTACADAS</h2>
+            <div class="carousel">
+                <div class="carousel-track">
+                    <div><button class="boton">RANDOM</button></div>
+                    <div><button class="boton">RANDOM</button></div>
+                    <div><button class="boton">RANDOM</button></div>
+                    <div><button class="boton">RANDOM</button></div>
+                    <div><button class="boton">RANDOM</button></div>
+                    <div><button class="boton">RANDOM</button></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rayita"></div>
+
+        <h1 class="catego">CATEGORIAS</h1>
+        <div class="container-fluid">
+            <div class="row" id="salto">
+                <div class="col-md-3">
+                    <a href="Categoria.html"><div class="cuadro1"><img src="Imagenes/hogar.png" alt="" class="categorias"></div>
+                    <button class="boton1">Hogar</button>
+                </div></a>
+                <div class="col-md-3">
+                    <button class="boton2">Educacion</button>
+                    <div class="cuadro3"><img src="Imagenes/Educacion.png" alt="" class="categorias1"></div>
+                </div>
+                <div class="col-md-3">
+                    <div class="cuadro1"><img src="Imagenes/Salud.png" alt="" class="categorias"></div>
+                    <button class="boton1">Salud</button>
+                </div>
+                <div class="col-md-3">
+                    <button class="boton2">Otros</button>
+                    <div class="cuadro2"><img src="Imagenes/Otros.png" alt="" class="categorias1"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rayita"></div>
+
+        <h1 class="catego">SERVICIOS</h1>
+
+        <div class="container-fluid" id="cuadross">
+            <div class="row"> 
+                <a href="Usuario.html"><div class="col-md-4"> 
+                    <div class="cuadrito" id="cuadrito">
+                    <h1>Juan Perez</h1>
+                    <h2>Especialista en instalaciones residenciales</h2>
+                    <img src="Imagenes/img1.jpg" alt="Electricista">
+                    <div class="separator"></div>
+                        <p class="desc">
+                          Soy un electricista certificado con más de 10 años de experiencia en instalaciones y 
+                          reparaciones eléctricas residenciales. Me especializo en soluciones de ahorro energético 
+                          y actualización de sistemas eléctricos antiguos. Garantizo un trabajo seguro y de calidad.
+                        </p>
+                    </div>
+                </div></a>
+                <div class="col-md-4"> 
+                    <div class="cuadrito" id="cuadrito">
+                        <h1>Ana Martínez</h1>
+                        <h2>Experta en sistemas de energía renovable</h2>
+                        <img src="Imagenes/img2.jpg" alt="Electricista">
+                        <div class="separator"></div>
+                        <p>Especializada en instalación y mantenimiento de paneles solares y sistemas eólicos domésticos.</p> 
+                    </div>
+                </div>
+                <div class="col-md-4"> 
+                    <div class="cuadrito" id="cuadrito">
+                        <h1>Miguel Sánchez</h1>
+                        <h2>Electricista industrial</h2>
+                        <img src="Imagenes/img3.jpg" alt="Electricista">
+                        <div class="separator"></div>
+                        <p>Amplia experiencia en instalaciones eléctricas de alta tensión y automatización industrial.</p> 
+                    </div>
+                </div>
+            </div>
+            <div class="row"> 
+              <div class="col-md-4"> 
+                  <div class="cuadrito" id="cuadrito">
+                      <h1>Laura Gómez</h1>
+                      <h2>Especialista en domótica</h2>
+                      <img src="Imagenes/img1.jpg" alt="Electricista">
+                      <div class="separator"></div>
+                      <p>Experta en instalación de sistemas de hogar inteligente y automatización residencial.</p> 
+                  </div>
+              </div>
+              <div class="col-md-4"> 
+                  <div class="cuadrito" id="cuadrito">
+                      <h1>Roberto Fernández</h1>
+                      <h2>Electricista de mantenimiento</h2>
+                      <img src="Imagenes/img2.jpg" alt="Electricista">
+                      <div class="separator"></div>
+                      <p>Especializado en mantenimiento preventivo y correctivo de sistemas eléctricos comerciales.</p> 
+                  </div>
+              </div>
+              <div class="col-md-4"> 
+                  <div class="cuadrito" id="cuadrito">
+                      <h1>Elena Torres</h1>
+                      <h2>Técnica en iluminación</h2>
+                      <img src="Imagenes/img3.jpg" alt="Electricista">
+                      <div class="separator"></div>
+                      <p>Experta en diseño e instalación de sistemas de iluminación eficientes para hogares y negocios.</p> 
+                  </div>
+              </div>
+          </div>
+        </div>
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="scripts.js"></script>
+    
+    </body>
+</html>

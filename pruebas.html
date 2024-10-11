@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Proveedor de Servicios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .profile {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .image-section {
+            flex: 1;
+            min-width: 300px;
+        }
+        .main-image {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .image-gallery {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .gallery-image {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .info-section {
+            flex: 2;
+            min-width: 300px;
+        }
+        h1, h2 {
+            margin-top: 0;
+        }
+        .contact-info {
+            margin-bottom: 20px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        .rates {
+            margin-bottom: 20px;
+        }
+        .rates ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .description {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <div class="image-section">
+                <img src="Imagenes/im5.jpeg" alt="Imagen principal del proveedor" id="mainImage" class="main-image">
+                <div class="image-gallery" id="imageGallery">
+                    <img src="Imagenes/ima1.jpg" alt="Imagen de servicio 1" class="gallery-image">
+                    <img src="Imagenes/im2.jpeg" alt="Imagen de servicio 2" class="gallery-image">
+                    <img src="Imagenes/im3.jpeg" alt="Imagen de servicio 3" class="gallery-image">
+                    <img src="Imagenes/im4.jpeg" alt="Imagen de servicio 4" class="gallery-image">
+                </div>
+            </div>
+            <div class="info-section">
+                <h1>Juan Pérez</h1>
+                <h2>Electricista Profesional</h2>
+                <p><strong>Edad:</strong> 35 años</p>
+                <p><strong>Experiencia:</strong> 10 años</p>
+                <div class="contact-info">
+                    <h3>Contacto</h3>
+                    <p><strong>Teléfono:</strong> +1234567890</p>
+                    <p><strong>Correo:</strong> juan@example.com</p>
+                    <p><strong>Sitio web:</strong> www.juanelectricista.com</p>
+                </div>
+                <div class="rates">
+                    <h3>Tarifas</h3>
+                    <ul>
+                        <li><strong>Por hora:</strong> $50</li>
+                        <li><strong>Por día:</strong> $300</li>
+                        <li><strong>Por trabajo:</strong> Desde $150</li>
+                    </ul>
+                </div>
+                <p><strong>Horarios de trabajo:</strong> Lunes a Viernes, 9:00 AM - 6:00 PM</p>
+                <div class="description">
+                    <h3>Descripción</h3>
+                    <p>Soy un electricista profesional con más de 10 años de experiencia en instalaciones residenciales y comerciales. Me especializo en soluciones de ahorro energético y sistemas de domótica. Mi objetivo es proporcionar un servicio de alta calidad y garantizar la seguridad eléctrica de mis clientes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Función para cambiar la imagen principal
+        function changeMainImage(event) {
+            if (event.target.classList.contains('gallery-image')) {
+                const mainImage = document.getElementById('mainImage');
+                mainImage.src = event.target.src.replace('80x80', '400x300');
+                mainImage.alt = event.target.alt;
+            }
+        }
+
+        // Agregar evento de clic a la galería de imágenes
+        const imageGallery = document.getElementById('imageGallery');
+        imageGallery.addEventListener('click', changeMainImage);
+    </script>
+</body>
+</html>
